@@ -102,7 +102,7 @@ class _ViewWeights:
 
     def find_open_space(self, item: Item) -> int:
         for index, weight in enumerate(self.weights):
-            if weight + item.width <= 8:
+            if weight + item.width <= 10:
                 return index
 
         raise ValueError("Could not find open space for item")
